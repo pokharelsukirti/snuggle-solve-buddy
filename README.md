@@ -1,6 +1,7 @@
 # HCVRP Solver
 
-This project contains a web app frontend (under `src/`) and an exact MILP solver for the Heterogeneous Capacitated Vehicle Routing Problem with compartment compatibility constraints (under `hcvrp/`).
+Guide to run the Heterogeneous Multicapacitated, Multi-Pickup, Multi-Delivery Vehicle Routing Problem with Time Windows.
+Check out the companion repository here: [Vehicle Routing Problem](https://github.com/pokharelsukirti/Vehicle-Routing-Problem)
 
 ## Run the solver from the project root
 
