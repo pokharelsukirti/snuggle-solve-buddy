@@ -51,6 +51,20 @@ python3 -m pip install ortools
 python3 hcvrp/hcvrp_scip.py
 ```
 
+## Run the local web UI
+
+Prefer a browser-based UI instead of terminal output? A minimal Flask app is included.
+
+```bash
+python -m pip install ortools flask
+python hcvrp/app.py
+```
+
+Then open [http://127.0.0.1:5000](http://127.0.0.1:5000) in your browser. Set a time limit, click **Solve**, and the solution (status, objective, routes, loads, arrival times) is rendered on the page.
+
+The server only listens on `127.0.0.1` (your own machine); nothing is exposed to the internet.
+
 ## Bring your own instance
 
-Open `hcvrp/hcvrp_scip.py`, replace the `demo_instance()` data with your own network, and re-run `python hcvrp/hcvrp_scip.py`.
+Open `hcvrp/hcvrp_scip.py`, replace the `demo_instance()` data with your own network, and re-run `python hcvrp/hcvrp_scip.py` (or refresh the web UI).
+
